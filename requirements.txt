@@ -7,3 +7,5 @@ matplotlib
 statsmodels
 tensorflow
 yfinance
+scikit-learn
+
