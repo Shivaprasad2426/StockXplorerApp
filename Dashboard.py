@@ -30,7 +30,7 @@ def calculate_rmse(true_values, predictions):
 def fetch_alternate_live_data(ticker):
     """Fetch live stock data from an alternate API."""
     api_url = f"https://www.alphavantage.co/query"
-    api_key = "YOUR_API_KEY"  # Replace with your actual API key
+    api_key = "ctkce79r01qntkqopbm0ctkce79r01qntkqopbmg"  # Replace with your actual API key
     params = {
         "function": "TIME_SERIES_INTRADAY",
         "symbol": ticker,
