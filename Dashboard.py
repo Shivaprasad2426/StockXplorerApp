@@ -10,6 +10,9 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 import requests
+import time
+
+
 
 # Helper Functions
 @st.cache_data
@@ -203,3 +206,5 @@ elif tab == "How to Use":
     - **Live Data**: Enter stock ticker to see real-time data and simple predictions.
     - **Advanced Features**: Analyze correlations across multiple stocks.
     """)
+st.write("Refreshing data every 5 minutes...")
+time.sleep(300)  # Pause for 5 minutes before fetching data again
